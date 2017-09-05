@@ -1080,4 +1080,51 @@ input:-ms-input-placeholder {
     background: #de9800;
     color: #fff;
     transform:scale(1.1);
-}	
+}
+
+/*--- CUSTOM CSS ---*/
+
+.topbar {
+    background-color: #24242A;
+    height: 42px;
+}
+
+.medios_pago {
+    color: #6d6d74;
+    font-size: 12px;
+    padding-top: 11px;
+}
+
+.medios_pago img {
+    margin-left: 10px;
+    margin-top: -2px;
+}
+
+.btn_sesion {
+    display: inline-block;
+    float: right;
+    height: 40px;
+    padding: 15px 18px;
+    color: #d2d2d3;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.btn_sesion:hover {
+    color: #FFF;
+    background-color: #1d1d21;
+    text-decoration: none;
+}
+
+.btn_sesion i {
+    float: left;
+    font-size: 16px;
+    margin-top: -3px;
+    margin-right: 8px;
+}
+
+.btn_sesion p {
+    float: left;
+    font-size: 10px !important;
+}
