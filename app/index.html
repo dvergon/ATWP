@@ -28,7 +28,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/alertify.min.css" />
+    <link rel="stylesheet" href="assets/css/alertify_themes/bootstrap.min.css" />
     <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
     <!--For Plugins external css-->
     <link rel="stylesheet" href="assets/css/plugins.css" />
@@ -70,7 +72,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img class="img-logo" src="assets/images/logo.png" alt="" /></a>
+                    <a class="navbar-brand" href="index.html"><img class="img-logo" alt="" /></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -371,24 +373,6 @@
         </div>
     </section>
 	
-<script type="text/javascript" src="js/alertifyjs/alertify.min.js"></script>	
-<link rel="stylesheet" href="js/alertifyjs/css/alertify.min.css" />
-<link rel="stylesheet" href="js/alertifyjs/css/themes/default.min.css" />
-<style>
-.alertify .ajs-header{
-	display:none;
-}
-.alertify .ajs-commands button {
-    padding: 0;
-}
-.alertify .ajs-commands {
-    margin: -14px 5px 0 0;
-}
-.alertify .ajs-dialog{
-	max-width:600px; 
-	margin: 10% auto;
-}
-</style>	
     <section id="contact" class="sections">
         <div class="container">
             <div class="heading">
@@ -410,7 +394,7 @@
 						<div style='padding:5px;'><input type="text" name="telefono" id="telefono" class="input_contacto" placeholder="Teléfono" /></div>
 						<div style='padding:5px;'><input type="text" name="web" id="web" class="input_contacto" placeholder="Su sitio web" /> </div>
                         <div class="spt-btn" style="text-align:center">
-	                        <button class="btn btn-primary" onclick="enviaFormulario();">Enviar mis datos</button>
+	                        <button class="btn btn-primary" id="btnEnviarContacto" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Enviando datos...">Enviar mis datos</button>
                         </div>
                     </div>
                 </div>
@@ -423,35 +407,7 @@
         </div>
         <!-- /container -->
     </section>
-	<script type="text/javascript">
-		function enviaFormulario(){
-			if(document.getElementById("nombre").value==""){       
-				alertify.alert('Alert Title', 'Debe ingresar su nombre en el campo "Nombre"', function(){  });
-				return false;			
-			}
 
-			if(document.getElementById("email").value==""){       
-				alertify.alert('Alert Title', 'Debe ingresar su correo electrónico', function(){  });
-				return false;							
-			}	
-			
-			if(document.getElementById("telefono").value==""){       
-				alertify.alert('Alert Title', 'Debe ingresar el teléfono del mensaje', function(){  });
-				return false;
-			}
-			
-			if(document.getElementById("web").value==""){       
-				alertify.alert('Alert Title', 'Debe ingresar el la URL de su web', function(){  });
-				return false;
-			}
-			document.getElementById("nombre").value='';
-			document.getElementById("email").value='';
-			document.getElementById("telefono").value='';
-			document.getElementById("web").value='';
-			alertify.success('Hemos recibido sus datos. Pronto nos contactaremos con usted');
-			//document.frm_contacto.submit();	 
-		}
-	</script>
     <div class="scroll-top">
         <div class="scrollup">
             <i class="fa fa-angle-double-up"></i>
@@ -476,8 +432,10 @@
             </div>
         </div>
     </footer>
+    <!-- Script load -->
     <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/alertify.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

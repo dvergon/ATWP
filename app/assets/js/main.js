@@ -115,4 +115,60 @@ jQuery(document).ready(function ($) {
 
 
     //End
+
+    //--- CUSTOM CODE ---
+    $('#btnEnviarContacto').on('click', enviarContactoEvt);
 });
+
+//----- CUSTOM CODE -----
+
+function enviarContactoEvt(e){
+
+    if(document.getElementById("nombre").value==""){
+
+        alertify.warning('Formulario incompleto: Nombre');
+
+    }else if(document.getElementById("email").value==""){
+
+        alertify.warning('Formulario incompleto: Email');
+
+    }else if(document.getElementById("telefono").value==""){
+
+        alertify.warning('Formulario incompleto: Teléfono');
+
+    }else if(document.getElementById("web").value==""){
+
+        alertify.warning('Formulario incompleto: Sitio Web');
+
+    }else{
+
+        $('#btnEnviarContacto').button('loading');
+
+        var contactData = {};
+
+        $('.input_contacto').each(function(index, element){
+
+            contactData[element.id] = element.value;
+        });
+
+        $.ajax({
+            url: './services/contacto.php/',
+            method: 'POST',
+            data: {cd:contactData},
+            success: function(){
+
+                $('.input_contacto').val('');
+
+                alertify.success('Hemos recibido sus datos. Pronto nos contactaremos con usted.');
+            },
+            error: function(){
+
+                alertify.error('No hemos podido recibir sus datos. Inténtelo nuevamente.');
+            },
+            complete: function(){
+
+                $('#btnEnviarContacto').button('reset');
+            }
+        });
+    }
+}

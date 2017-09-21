@@ -644,14 +644,19 @@ input:-ms-input-placeholder {
 
 .img-logo{
 	width:100%;	
-	max-width:300px;
+	max-width:450px;
+    content:url("../images/logo.png");
 }
 
 .menu-bg .img-logo{
-width:30%;
+    width:30%;
+    content:url("../images/logo_small.png");
+    padding: 5px 0px 5px 10px;
+
 }
 .menu-bg .navbar-brand {
     padding: 0px;
+    width: 70%;
 }
 
 /*Home Page Style*/
@@ -1176,12 +1181,13 @@ width:30%;
 
 
 .input_contacto{
-	border-radius:3px;
 	height:40px;
 	width:90%;
 	padding:5px;
-	border:1px gray solid;
-	box-shadow:1px 1px 1px 0 rgba(0,0,0, .5);
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
 }
 .navbar-brand{
 	max-width:467px;
@@ -1197,11 +1203,10 @@ width:30%;
 	}
 }
 .btn_pagos{
-	.btn_pagos{
-		width:100%;
-		max-width:247px;
-	}
+	width:100%;
+    max-width:247px;
 }
+
 @media all and (max-width:410px){
 	.btn_pagos{
 		width:50%;
@@ -1212,8 +1217,19 @@ width:30%;
 @font-face{font-family:'fedoka'; font-style:normal;font-weight:700;src:url(FredokaOne-Regular.ttf);}
 @font-face{font-family:'gidole'; font-style:normal;font-weight:700;src:url(Gidole-Regular.otf);}
 
-
-
+.alertify .ajs-header{
+    display:none;
+}
+.alertify .ajs-commands button {
+    padding: 0;
+}
+.alertify .ajs-commands {
+    margin: -14px 5px 0 0;
+}
+.alertify .ajs-dialog{
+    max-width:600px; 
+    margin: 10% auto;
+}
 
 
 
