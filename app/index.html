@@ -13,9 +13,17 @@
 <!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
+    <title>Migración desde webpay KCC a WebServices</title>
+    <meta http-equiv="expires" content="-1" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="keywords" content="actualizar webpay, actualizar kit webpay, término servicio webpay plus kcc, migrar kcc a web service, nueva plataforma transbank, cambiar webpay a nueva versión, código de comercio webservices" />
+    <meta name="description" content="Servicio de migración de webpay plus kcc al nuevo sistema de servicio web" />
+	<meta name="googlebot" content="index, follow" />    
+    <meta name="Rating" content="General" />
+    <meta name="revisit-after" content="5 Days" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="google-site-verification" content="T7LumR_UgPyzCY5sPZZoy-kET4pGeRNsKazIpmK3vZg" />	
+    
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -27,8 +35,8 @@
     <!--Theme custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!--Theme Responsive css-->
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-    <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <!--link rel="stylesheet" href="assets/css/responsive.css" /-->
+    <!--script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script-->
 </head>
 
 <body data-spy="scroll" data-target="#main-navbar">
@@ -40,15 +48,15 @@
     </div>
     <div class="topbar">
         <div class="container">
-            <div class="medios_pago col-md-6">
-                Medios de pago:<img src="assets/images/tarjetas.png" alt="...">
+            <div class="medios_pago col-md-12">
+                Medios de pago:<img src="assets/images/tarjetas.png" alt="Pago webpay" class="btn_pagos">
             </div>
-            <div class="col-md-6" style="">
-                <a href="#" class="btn_sesion">
-                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                    <p>Iniciar sesión</p>
-                </a>
-            </div>
+            <!-- <div class="col-md-6" style=""> -->
+                <!-- <a href="#" class="btn_sesion"> -->
+                    <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
+                    <!-- <p style="line-height: 12px;">Iniciar sesión</p> -->
+                <!-- </a> -->
+            <!-- </div> -->
         </div>
     </div>
     <div id="menubar" class="main-menu">
@@ -62,8 +70,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="" />
-                    </a>
+                    <a class="navbar-brand" href="index.html"><img class="img-logo" src="assets/images/logo.png" alt="" /></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -85,16 +92,22 @@
     </div>
     <!--Home page style-->
     <header id="home" class="sections">
-        <div class="container">
+	<style>
+		.container p{line-height:26px; font-size:18px;}
+		.sections p{line-height:26px; font-size:18px;}
+		.sections h5{line-height:26px; font-size:22px;}
+		
+	</style>
+        <div class="container" >
             <div class="row">
                 <div class="homepage-style">
                     <div class="top-arrow hidden-xs text-center"><img src="assets/images/top-arrow.png" alt="" />
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="unique-apps">
-                            <h2>actualizatuwebpay.cl<br>Migración de tecnologías</h2>
-                            <p>
-                                actualizatuwebpay.cl es una iniciativa dirigida por dos empresas del rubro de la ingeniería de software, la cual busca prestar a nuestros clientes soluciones de migración de tecnologías (KCC a WS) para el sistema de pago de Transbank: WebPay.
+							<h1>Migración WebPay KCC a WebServices</h1>
+                            <p style="">
+                                "Actualiza Tu Webpay" es una iniciativa dirigida por 3 empresas del rubro de la ingeniería de software, la cual busca prestar a nuestros clientes soluciones de migración de tecnologías (KCC a WS) para el sistema de pago de Transbank: WebPay.<br/><br/>
                             </p>
                         </div>
                     </div>
@@ -103,25 +116,25 @@
                             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
                                 <!-- Indicators -->
                                 <ol class="carousel-indicators">
-                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                    <!-- <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li> -->
+                                    <!-- <li data-target="#carousel-example-generic" data-slide-to="1"></li> -->
+                                    <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+                                    <!-- <li data-target="#carousel-example-generic" data-slide-to="3"></li> -->
                                 </ol>
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
                                     <div class="item active">
                                         <img src="assets/images/slider-img.png" alt="" />
                                     </div>
-                                    <div class="item">
-                                        <img src="assets/images/slider-img.png" alt="" />
-                                    </div>
-                                    <div class="item">
-                                        <img src="assets/images/slider-img.png" alt="" />
-                                    </div>
-                                    <div class="item">
-                                        <img src="assets/images/slider-img.png" alt="" />
-                                    </div>
+                                    <!-- <div class="item"> -->
+                                        <!-- <img src="assets/images/slider-img.png" alt="" /> -->
+                                    <!-- </div> -->
+                                    <!-- <div class="item"> -->
+                                        <!-- <img src="assets/images/slider-img.png" alt="" /> -->
+                                    <!-- </div> -->
+                                    <!-- <div class="item"> -->
+                                        <!-- <img src="assets/images/slider-img.png" alt="" /> -->
+                                    <!-- </div> -->
                                 </div>
                             </div>
                         </div>
@@ -136,18 +149,100 @@
             <div class="heading">
                 <div class="title text-center arrow-left">
                     <img class="hidden-xs" src="assets/images/left-arrow.png" alt="" />
-                    <h4 class="">Cómo trabajamos</h4>
+                    <h4>SERVICIO DE ACTUALIZACION DE WEBPAY KCC</h4>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="main-works">
-                        <img src="assets/images/infografia.png" alt="" />
+						<style>
+						.infog p{
+							font-family:gidole;
+						}
+						.infog h1{
+							font-family:'fedoka';
+						}
+
+						</style>
+						<div style="width:100%; max-width:1000px; margin:auto;" id="infog" class="infog">
+							<div style="background:url(assets/images/infografia.png);  background-size:100% auto;">
+								<div style="width:100%; border:0px solid; background-color:#F8B000"; >
+									<div style="width:80%; margin-left:6%; padding-top:7%;padding-bottom:7%">	
+										<h1 style="font-size:50px; color:white; font-weight:bolder; text-align:left; text-transform:uppercase">¿Necesitas actualizar<br/> tu webpay?</h1>
+										<h1 style="font-size:45px; color:#000; font-weight:bolder; text-align:left;">¡trabaja con nosotros!</h1>
+									</div>
+								</div>
+								<div style="background-color:#FFEDD1; padding-top:7%; width:100%">
+									<div style="width:100%; max-width:400px; display:inline-block;  vertical-align:top;">
+										<div style="padding-top:3%; width:100%; display:inline-block;">	
+										<h1>Comencemos!</h1>
+										<p>Contácte a su ejecutivo Transbank o lláme al 600 638 6380 para solicitar la firma de la nueva documentación para la obtención del nuevo código de comercio WS (Web Services).</p>
+										</div>
+									</div>
+									<div style="width:100%; max-width:100px;display:inline-block; vertical-align:top;">
+										<img src="assets/images/barra.png" style="max-width:21px; width:100%" class="barras">
+									</div>								
+									<div style="width:400%; max-width:400px;  display:inline-block; padding-top:5%; vertical-align:top;">
+										<img src="assets/images/fono.png"  style="max-width:154px; width:100%">
+									</div>										
+								</div>
+								<div style="background-color:#FFEDD1; padding-top:0%">
+									<div style="width:100%; max-width:400px; display:inline-block; padding-top:5%; vertical-align:top;">
+										<img src="assets/images/sobre.png"  style="max-width:199px; width:100%">
+									</div>										
+									<div style="width:100%; max-width:100px; display:inline-block;  vertical-align:top;">
+										<img src="assets/images/barra.png" style="max-width:21px; width:100%" class="barras">
+									</div>								
+								
+									<div style="width:100%; max-width:400px; display:inline-block;  vertical-align:top;">
+										<div style="padding-top:3%; width:100%; display:inline-block;">	
+										<h1>Contáctenos</h1>
+										<p>Una vez en trámite la firma de documentación, crea una cuenta en nuestro sitio para comenzar el proceso de evaluación del servicio.</p>
+										</div>
+									</div>
+								</div>
+								<div style=" background-color:#FFEDD1; width:100%">
+									<div style="width:100%; max-width:400px; display:inline-block;   vertical-align:top;">
+										<div style="padding-top:6%; width:100%; display:inline-block;">	
+										<h1>Desarrollo</h1>
+										<p>Una vez evaluado el sitio, y aceptada la propuesta de trabajo, comenzaremos la migración de tecnologías.</p>
+										</div>
+									</div>
+									<div style="width:100%; max-width:100px;  display:inline-block;  vertical-align:top;">
+										<img src="assets/images/barra.png" style="max-width:21px; width:100%" class="barras">
+									</div>								
+									<div style="width:100%; max-width:400px; display:inline-block; padding-top:2%;  vertical-align:top;">
+										<img src="assets/images/ejecutivo.png"  style="max-width:267px; width:100%">
+									</div>										
+								</div>	
+								<div style=" background-color:#FFEDD1; padding-top:0%">
+									<div style="width:100%; max-width:400px;  display:inline-block; padding-top:5%;  vertical-align:top;">
+										<img src="assets/images/webpp.png"  style="max-width:308px; width:100%">
+									</div>										
+									<div style="width:100%; max-width:100px;  display:inline-block;  vertical-align:top;">
+										<img src="assets/images/barra2.png" style="max-width:21px; width:100%" class="barras">
+									</div>								
+								
+									<div style="width:100%; max-width:400px;  display:inline-block;  vertical-align:top;">
+										<div style="padding-top:3%; width:100%; display:inline-block;">	
+										<h1>Listo!</h1>
+										<p>Una vez realizada la migración ya estará listo para seguir trabajando con WebPay.</p>
+										</div>
+									</div>
+								</div>								
+								<div style=" background-color:#F8B000; padding:3%; text-align:center; font-size:30px;">
+									www.actualizatuwebay.cl
+								</div>									
+							</div>
+						</div>
+
+						<img src="assets/images/infografia.png" class="infog2" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
+	<!--
     <section id="our-feature" class="sections">
         <div class="container">
             <div class="heading">
@@ -234,36 +329,66 @@
             </div>
         </div>
     </section>
-    <section id="our-team" class="sections">
-        <div class="container">
+	-->
+    <section id="our-team" class="sections" >
+        <div class="container" >
             <div class="heading">
                 <div class="title text-center arrow-left">
                     <img class="hidden-xs" src="assets/images/left-arrow.png" alt="" />
-                    <h4 class="">Miembros del Equipo</h4>
+                    <h4 class="">SOBRE NOSOTROS</h4>
                 </div>
             </div>
         </div>
-        <div class="container-fluid project-bg">
+        <div class="container-fluid project-bg" >
             <div class="row">
-                <div class="main-team text-center">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="main-team text-center" style="max-width:1200px !important; margin:auto !important;">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="team-member">
                             <img class="img-circle" src="assets/images/team/spears_team.png" alt="" />
                             <h5>Spartan Bears</h5>
-                            <p>DEV</p>
+                            <p>Empresa de desarrollo de sistemas</p>
+							<a href="https://www.spartanbears.cl">https://www.spartanbears.cl</a>							
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="team-member">
                             <img class="img-circle" src="assets/images/team/chilehosting_team.png" alt="" />
-                            <h5>ChileHosting</h5>
-                            <p>DEV</p>
+                            <h5>ChileHosting.Com</h5>
+                            <p>Empresa dedicada a la venta de hosting, registro de dominios y desarrolo de aplicaciones web. Con más de 2000 clientes activos, contamos con un equipo de desarrollo capacitado para brindarle la mejor experiencia en la actualización de sus sistemas webpay KCC a webservices.</p>
+							<a href="https://www.chilehosting.com">https://www.chilehosting.com</a>
+                        </div>
+                    </div>					
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="team-member">
+                            <img class="img-circle" src="assets/images/team/dc.png" alt="" />
+                            <h5>DominiosChile.Com</h5>
+                            <p style="">Empresa líder en el registro de dominios internacionales en Chile. Con más de 8 años de experiencia, contamos con una gran cartera de clientes quienes nos avalan como los mejores de Chile. Soporte especializado 24/7 y vasta experiencia en desarrollo web.</p>
+							<a href="https://www.dominioschile.com">https://www.dominioschile.com</a>							
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+	
+<script type="text/javascript" src="js/alertifyjs/alertify.min.js"></script>	
+<link rel="stylesheet" href="js/alertifyjs/css/alertify.min.css" />
+<link rel="stylesheet" href="js/alertifyjs/css/themes/default.min.css" />
+<style>
+.alertify .ajs-header{
+	display:none;
+}
+.alertify .ajs-commands button {
+    padding: 0;
+}
+.alertify .ajs-commands {
+    margin: -14px 5px 0 0;
+}
+.alertify .ajs-dialog{
+	max-width:600px; 
+	margin: 10% auto;
+}
+</style>	
     <section id="contact" class="sections">
         <div class="container">
             <div class="heading">
@@ -274,17 +399,23 @@
             </div>
             <!-- Example row of columns -->
             <div class="row">
+				
                 <div class="col-sm-6 col-xs-12">
                     <div class="supports-content">
                         <p>
-                            Si estás interesado en nuestros servicios o tienes alguna consulta, te invitamos a contactarnos a través de nuestro formulario de contacto.
+                            Si estás interesado en actualizar tu kit KCC o tienes alguna consulta, te invitamos a registrate en el siguiente formulario para ser contactado.
                         </p>
-                        <div class="spt-btn">
-                            <button class="btn btn-primary">Contacto</button>
+						<div style='padding:5px;'><input type="text" name="nombre" id="nombre" class="input_contacto" placeholder="Nombre" /></div>
+						<div style='padding:5px;'><input type="email" name="email" id="email" class="input_contacto" placeholder="Email" /> </div>
+						<div style='padding:5px;'><input type="text" name="telefono" id="telefono" class="input_contacto" placeholder="Teléfono" /></div>
+						<div style='padding:5px;'><input type="text" name="web" id="web" class="input_contacto" placeholder="Su sitio web" /> </div>
+                        <div class="spt-btn" style="text-align:center">
+	                        <button class="btn btn-primary" onclick="enviaFormulario();">Enviar mis datos</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-xs-12">
+					<br/><br/><br/>
                     <div class="supports-img"><img class="img-responsive" src="assets/images/monitor.png" alt="" />
                     </div>
                 </div>
@@ -292,6 +423,35 @@
         </div>
         <!-- /container -->
     </section>
+	<script type="text/javascript">
+		function enviaFormulario(){
+			if(document.getElementById("nombre").value==""){       
+				alertify.alert('Alert Title', 'Debe ingresar su nombre en el campo "Nombre"', function(){  });
+				return false;			
+			}
+
+			if(document.getElementById("email").value==""){       
+				alertify.alert('Alert Title', 'Debe ingresar su correo electrónico', function(){  });
+				return false;							
+			}	
+			
+			if(document.getElementById("telefono").value==""){       
+				alertify.alert('Alert Title', 'Debe ingresar el teléfono del mensaje', function(){  });
+				return false;
+			}
+			
+			if(document.getElementById("web").value==""){       
+				alertify.alert('Alert Title', 'Debe ingresar el la URL de su web', function(){  });
+				return false;
+			}
+			document.getElementById("nombre").value='';
+			document.getElementById("email").value='';
+			document.getElementById("telefono").value='';
+			document.getElementById("web").value='';
+			alertify.success('Hemos recibido sus datos. Pronto nos contactaremos con usted');
+			//document.frm_contacto.submit();	 
+		}
+	</script>
     <div class="scroll-top">
         <div class="scrollup">
             <i class="fa fa-angle-double-up"></i>
@@ -310,7 +470,7 @@
                         <a target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
                         <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a-->
                     </div>
-                    <p><a href="https://www.chilehosting.com/">ChileHosting</a> & <a href="https://www.spartanbears.cl">Spartan Bears</a></p>
+                    <p><a href="https://www.chilehosting.com/" style="color:#AAB2BD">ChileHosting.Com</a> & <a href="https://www.spartanbears.cl" style="color:#AAB2BD">Spartan Bears</a></p>
                     <p>2017</p>
                 </div>
             </div>

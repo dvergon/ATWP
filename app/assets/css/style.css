@@ -35,6 +35,8 @@ PRE LOADER
     overflow: hidden !important;
 }
 
+
+
 .loaded {
     width: 60px;
     height: 60px;
@@ -96,6 +98,7 @@ ul {
     list-style: none;
     padding: 0;
 }
+
 img {
     max-width: 100%;
 }
@@ -452,6 +455,37 @@ Section Title Bar CSS
     -ms-box-shadow:2px 2px 2px 0 rgba(0,0,0, .5);
     -o-box-shadow:2px 2px 2px 0 rgba(0,0,0, .5);
 }
+
+.infog {
+	display:block;	
+} 
+.infog2 {
+	display:none;	
+} 
+
+@media all and (max-width:1000px){
+	.heading .title h4  {
+	   width:100%; 
+		max-width:700px; 
+		display: block; 
+		margin:auto;
+		
+	} 
+	
+	.infog {
+		display:none;	
+	} 
+	.infog2 {
+		display:block;	
+	} 
+
+	
+}	
+
+
+.supports-img{
+	text-align:center;
+}
 .heading .title.arrow-right{
     margin-top: -130px;
 }
@@ -608,6 +642,17 @@ input:-ms-input-placeholder {
     padding:10px 0;
 }
 
+.img-logo{
+	width:100%;	
+	max-width:300px;
+}
+
+.menu-bg .img-logo{
+width:30%;
+}
+.menu-bg .navbar-brand {
+    padding: 0px;
+}
 
 /*Home Page Style*/
 
@@ -920,16 +965,16 @@ input:-ms-input-placeholder {
     margin-bottom:20px;
 }
 .main-team .team-member h5{
-    font-size:15px;
+    font-size:20px;
     font-weight:500;
     color:#f5f5f5;
     text-transform:uppercase;
     margin:20px 0;
 }
 .main-team .team-member p{
-    font-size:14px;
+    font-size:16px;
     color:#f5f5f5;
-    text-transform:uppercase;
+    /* text-transform:uppercase; */
     margin-top: -15px;
 }
 
@@ -1086,7 +1131,7 @@ input:-ms-input-placeholder {
 
 .topbar {
     background-color: #24242A;
-    height: 42px;
+    min-height: 42px;
 }
 
 .medios_pago {
@@ -1128,3 +1173,48 @@ input:-ms-input-placeholder {
     float: left;
     font-size: 10px !important;
 }
+
+
+.input_contacto{
+	border-radius:3px;
+	height:40px;
+	width:90%;
+	padding:5px;
+	border:1px gray solid;
+	box-shadow:1px 1px 1px 0 rgba(0,0,0, .5);
+}
+.navbar-brand{
+	max-width:467px;
+	width:100%;
+}
+
+.barras{
+	
+}
+@media all and (max-width:1000px){
+	.barras{
+		display:none;	
+	}
+}
+.btn_pagos{
+	.btn_pagos{
+		width:100%;
+		max-width:247px;
+	}
+}
+@media all and (max-width:410px){
+	.btn_pagos{
+		width:50%;
+		
+	}
+}
+	
+@font-face{font-family:'fedoka'; font-style:normal;font-weight:700;src:url(FredokaOne-Regular.ttf);}
+@font-face{font-family:'gidole'; font-style:normal;font-weight:700;src:url(Gidole-Regular.otf);}
+
+
+
+
+
+
+	
